@@ -1,8 +1,7 @@
 # TV Searcher and Ranker
 
 ## Overview
-This is a front end project built using HTML, CSS, and JavaScript.  
-A backend will be added later to make it a full-stack application.
+This web app will allow users to Search for and rank their favorite TV shows!
 
 ## Tech Stack
 - HTML
@@ -21,6 +20,8 @@ A backend will be added later to make it a full-stack application.
 
 ## Project Structure
 
+```text
+
 tv-show-searcher-ranker/
 ├── frontend/
 │   ├── index.html
@@ -29,19 +30,26 @@ tv-show-searcher-ranker/
 │   ├── js/
 │   │   └── app.js
 │   └── images/
-│       ├── dark.jpg           
-│       ├── light.jpg          
+│       ├── dark.jpg
+│       ├── light.jpg
 │       └── demo/
-│           └── demo.gif       # GIF demo of interactions (search + ranking)
-├── backend/                   # Placeholder for future backend
-│   └── .gitkeep               # Empty file to track the folder in Git
-├── .gitignore                 # Git ignore file
-└── README.md                  # Project documentation and demo info
+│           └── demo.gif
+├── backend/ (placeholder)
+│   └── .gitkeep
+├── .gitignore
+└── README.md
+
+```
 
 ## How to Run
 
 1. Navigate to the `frontend` folder.
 2. Open `index.html` in your browser.
+
+
+## API Used
+
+This project uses the [TVMaze API](https://www.tvmaze.com/api) to fetch TV show data dynamically.
 
 ## Future Improvements
 - Add backend (Node.js / Flask / etc.)
