@@ -1,0 +1,232 @@
+[data-theme='light'] {
+    --color-bg: #ffffff;
+    --color-fg: #000000;
+    --rotate: 0;
+    --saturate: 1;
+    --brightness: 1;
+    --contrast: 1;
+    --grayscale: 0;
+    --rating5: #264653;
+    --rating4: #2a9d8f;
+    --rating3: #e9c46a;
+    --rating2: #f4a261;
+    --rating1: #e76f51;
+    --white:white;
+}
+
+
+[data-theme='dark'] {
+    --color-bg: #000000;
+    --color-fg: #ffffff;
+    --saturate: 0;
+    --brightness: 0.7;
+    --contrast: 2.5;
+    --grayscale: 1;
+    --rating5: #343a40;
+    --rating4: #495057;
+    --rating3: #6c757d;
+    --rating2: #adb5bd;
+    --rating1: #ced4da;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    padding-top: 1rem;
+}
+
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+}
+
+#color-theme-toggler {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    width: 10rem;
+}
+
+
+#color-theme-toggler img {
+    object-fit: fill;
+    width: 30%;
+}
+
+#color-theme-toggler span {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.roboto-flex-regular {
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-flex-bold {
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    background-color: var(--color-fg);
+    padding: 0.35rem;
+    color: var(--color-bg);
+    box-shadow: none;
+    border: none;
+}
+
+.no-visible {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+.images {
+    width: 100%;
+    background-color: var(--color-fg);
+    margin-top: 1rem;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    color: var(--color-bg);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 1rem;
+
+}
+
+.images>.name-title {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+
+}
+
+input {
+    box-shadow: none;
+    border: none;
+    height: 1.75rem;
+    font-family: "Silkscreen", sans-serif;
+    background-color: var(--color-fg);
+    color: var(--color-bg);
+}
+
+input::placeholder {
+    color: gray;
+}
+
+form button {
+    height: 1.89rem;
+}
+
+.filter {
+    filter: invert(0.5)
+}
+
+.images img {
+    /* filter: saturate(var(--saturate)) brightness(var(--brightness)) contrast(var(--contrast)) */
+    filter: grayscale(var(--grayscale))
+}
+
+.rating-box {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-left: 1px solid var(--color-bg);
+    width: 100%;
+    text-align: center;
+
+}
+
+.inner {
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner>div {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+}
+
+.rating-box:nth-of-type(1) {
+    background-color: var(--rating5);
+    color: var(--white);
+}
+
+.rating-box:nth-of-type(2) {
+    background-color: var(--rating4);
+    color: var(--white);
+}
+
+.rating-box:nth-of-type(3) {
+    background-color: var(--rating3);
+}
+
+.rating-box:nth-of-type(4) {
+    background-color: var(--rating2);
+}
+
+.rating-box:nth-of-type(5) {
+    background-color: var(--rating1);
+}
+
+
+.rating-box:nth-last-child {
+    border: none;
+}
+
+
+.task {
+    cursor: grab;
+}
+
+.task:active {
+    cursor: grabbing;
+}
+
+.smaller-image {
+    width: 105px;
+    height: auto;
+}
+
+.all-ratings {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: space-evenly;
+
+}
