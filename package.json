@@ -1,0 +1,26 @@
+{
+  "name": "tv_show_search_expanded",
+  "version": "1.0.0",
+  "description": "This web app will allow users to Search for and rank their favorite TV shows!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preethimaran/tv-show-searcher-ranker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/preethimaran/tv-show-searcher-ranker/issues"
+  },
+  "homepage": "https://github.com/preethimaran/tv-show-searcher-ranker#readme",
+  "dependencies": {
+    "ejs": "3.1.10",
+    "express": "5.2.1",
+    "uuid": "13.0.0"
+  }
+}
