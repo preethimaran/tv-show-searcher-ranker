@@ -7,6 +7,8 @@ This web app will allow users to Search for and rank their favorite TV shows!
 - HTML
 - CSS
 - JavaScript
+- Express
+- Node.js
 
 ## Features
 - Search for TV shows dynamically using the TVMaze API
@@ -16,35 +18,29 @@ This web app will allow users to Search for and rank their favorite TV shows!
 - Future backend will allow saving favorite shows and the ranking list
 
 ## Live Demo
-![Demo of TV Searcher](frontend/images/demo/demo.gif)
-
-## Project Structure
-
-```text
-
-tv-show-searcher-ranker/
-├── frontend/
-│   ├── index.html
-│   ├── css/
-│   │   └── styles.css
-│   ├── js/
-│   │   └── app.js
-│   └── images/
-│       ├── dark.jpg
-│       ├── light.jpg
-│       └── demo/
-│           └── demo.gif
-├── backend/ (placeholder)
-│   └── .gitkeep
-├── .gitignore
-└── README.md
-
-```
+![Demo of TV Searcher](public/images/demo/demo.gif)
 
 ## How to Run
 
-1. Navigate to the `frontend` folder.
-2. Open `index.html` in your browser.
+Follow these steps to run the project locally:
+
+### 1. Navigate to the project directory
+```bash
+cd your-project-folder
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Start the server
+```bash
+node index.js
+```
+
+### 3. Visit the following URL in your browser
+http://localhost:3000/home
 
 
 ## API Used
@@ -52,7 +48,6 @@ tv-show-searcher-ranker/
 This project uses the [TVMaze API](https://www.tvmaze.com/api) to fetch TV show data dynamically.
 
 ## Future Improvements
-- Add backend (Node.js / Flask / etc.)
 - Add database
 - Deploy to cloud
 
